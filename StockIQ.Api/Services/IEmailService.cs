@@ -1,0 +1,6 @@
+namespace StockIQ.Api.Services;
+
+public interface IEmailService
+{
+    Task SendPasswordResetEmailAsync(string toEmail, string resetLink);
+}
