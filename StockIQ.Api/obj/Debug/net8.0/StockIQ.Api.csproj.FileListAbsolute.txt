@@ -230,3 +230,4 @@ D:\new project\stockiq-ai-insights-project1\StockIQ.Api\obj\Debug\net8.0\refint\
 D:\new project\stockiq-ai-insights-project1\StockIQ.Api\obj\Debug\net8.0\StockIQ.Api.pdb
 D:\new project\stockiq-ai-insights-project1\StockIQ.Api\obj\Debug\net8.0\StockIQ.Api.genruntimeconfig.cache
 D:\new project\stockiq-ai-insights-project1\StockIQ.Api\obj\Debug\net8.0\ref\StockIQ.Api.dll
+D:\new project\stockiq-ai-insights-project1\StockIQ.Api\obj\Debug\net8.0\StockIQ.Api.sourcelink.json
