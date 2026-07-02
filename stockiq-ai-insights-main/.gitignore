@@ -4,5 +4,8 @@ bin/
 obj/
 .vs/
 .env
+.env.local
 appsettings.Development.json
 *.user
+*.suo
+*.log
