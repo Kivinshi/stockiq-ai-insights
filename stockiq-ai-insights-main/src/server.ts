@@ -54,6 +54,7 @@
 //};
 
 import "./lib/error-capture";
+
 import { consumeLastCapturedError } from "./lib/error-capture";
 import { renderErrorPage } from "./lib/error-page";
 
@@ -80,17 +81,15 @@ async function normalizeCatastrophicSsrResponse(response: Response): Promise<Res
 
   const body = await response.clone().text();
 
-  if (!body.includes('"unhandled":true') || !body.includes('"message":"HTTPError"')) {
+  if (!body.includes('"unhandled":true')) {
     return response;
   }
 
-  console.error(consumeLastCapturedError() ?? new Error(`h3 swallowed SSR error: ${body}`));
+  console.error(consumeLastCapturedError() ?? new Error(`SSR error swallowed by h3: ${body}`));
 
   return new Response(renderErrorPage(), {
     status: 500,
-    headers: {
-      "content-type": "text/html; charset=utf-8",
-    },
+    headers: { "content-type": "text/html; charset=utf-8" },
   });
 }
 
@@ -104,9 +103,7 @@ export default {
       console.error(error);
       return new Response(renderErrorPage(), {
         status: 500,
-        headers: {
-          "content-type": "text/html; charset=utf-8",
-        },
+        headers: { "content-type": "text/html; charset=utf-8" },
       });
     }
   },
