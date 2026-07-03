@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("StockIQ.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b2cbbf696bc577a683d1ca4aba2932b4e2d40a69")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+912111404d5224ee71daf8d79d7fe93df4c7e64a")]
 [assembly: System.Reflection.AssemblyProductAttribute("StockIQ.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("StockIQ.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
